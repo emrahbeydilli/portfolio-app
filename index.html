@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Logo</title>
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="bi bi-file-person-fill"></i> About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects"><i class="bi bi-file-code-fill"></i> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="bi bi-person-lines-fill"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hakkımda Bölümü -->
+    <section id="about" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="display-4 mb-3">About Me</h2>
+            <img src="img/profile.jpg" class="rounded-circle mb-5" alt="profile image" width="200">
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A laudantium sed in sapiente esse saepe tempora! Modi, adipisci quisquam at ullam, voluptate doloribus natus dolorum, velit quibusdam impedit ipsam quis.</p>
+        </div>
+    </section>
+
+    <!-- Projeler Bölümü -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="display-4 text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 project-item">
+                    <div class="card">
+                        <img src="img/proje1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi aliquam odio possimus veniam illo placeat non, autem deleniti ea ut rem nisi fuga voluptatem quas nesciunt. Itaque, aliquam atque.</p>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-item">
+                    <div class="card">
+                        <img src="img/proje2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi aliquam odio possimus veniam illo placeat non, autem deleniti ea ut rem nisi fuga voluptatem quas nesciunt. Itaque, aliquam atque.</p>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-item">
+                    <div class="card">
+                        <img src="img/proje3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi aliquam odio possimus veniam illo placeat non, autem deleniti ea ut rem nisi fuga voluptatem quas nesciunt. Itaque, aliquam atque.</p>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="display-4 text-center">Contact</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your e-mail">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>Logo &copy; 2025 |  All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS ve Bağımlılıkları -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
