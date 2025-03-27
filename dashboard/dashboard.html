@@ -15,34 +15,41 @@
 
 <body class="d-flex">
     <!-- Sidebar -->
-    <div class="sidebar bg-dark text-white min-vh-100">
-        <div class="p-4">
+    <div class="sidebar bg-dark text-white min-vh-100 d-flex flex-column pt-4">
             <div class="text-center">
-                <img src="../img/profile.jpg" alt="profil" class="rounded-circle w-50 mb-3">
-                <h4>Emrah</h4>
+                <img src="../img/profile.jpg" alt="profile" class="rounded-circle w-50 mb-3">
+                <h4>John Doe</h4>
             </div>
-            <ul class="nav flex-column mt-4">
+            <ul class="nav flex-column mt-4 flex-grow-1">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Anasayfa</a>
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-house-door-fill"></i> Home
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Kullanıcılar</a>
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-people-fill"> </i>Users</i>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Ayarlar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Çıkış</a>
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-gear-fill"></i> Settings
+                    </a>
                 </li>
             </ul>
+        <div class="p-4 mt-auto">
+            <a class="btn btn-danger w-100" href="#">
+                Logout 
+                <i class="bi bi-box-arrow-right"></i>
+            </a>
         </div>
     </div>
 
+
     <!-- Page Content -->
     <div class="container mt-4">
-        <h2>Kontrol paneline hoşgeldiniz!</h2>
-        <p>Panelde projeler ile ilgili gerekli değişiklikleri yapabilirsiniz.</p>
-        <!-- Add more content here -->
+        <h2>Welcome to the dashboard!</h2>
+        <p>You can make the necessary changes regarding the projects in the panel.</p>
     </div>
     </div>
 
