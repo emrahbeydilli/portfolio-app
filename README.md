@@ -1,2 +1,2 @@
-# bs5-portfolio
+# portfolio-app
 Portfolio design with vanilla js &amp; bootstrap 5
