@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="dashboard.html">
+                        <a class="nav-link" href="dashboard.html">
                             <i class="bi bi-house-door-fill"></i> Home
                         </a>
                     </li>
@@ -58,7 +58,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="help.html">
+                        <a class="nav-link active" href="help.html">
                             <i class="bi bi-info-circle"></i> Help
                         </a>
                     </li>
@@ -73,11 +73,56 @@
     </nav>
 
     <!-- Page Content -->
-    <section class="flex-fill bg-light pt-3 d-flex justify-content-center align-items-center">
+    <section class="flex-fill bg-light pt-3">
         <div class="container">
-            <h2>Welcome to Dashboard</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias minima repellendus, quas quia modi nemo dolor excepturi laborum ex vel esse porro nulla fuga blanditiis architecto quidem itaque voluptatem. Voluptatibus!</p>
-            <p>For more information, please click <a href="#">here.</a></p>
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h2 class="display-6 text-center">Help</h2>
+                </div>
+                <div class="card-body">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    <i class="bi bi-info-circle me-1"></i>Header
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    <i class="bi bi-info-circle me-1"></i>Projects
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 

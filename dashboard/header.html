@@ -33,12 +33,12 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="dashboard.html">
+                        <a class="nav-link" href="dashboard.html">
                             <i class="bi bi-house-door-fill"></i> Home
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="bi bi-pencil-square"></i> Customize Website
                         </a>
@@ -73,11 +73,29 @@
     </nav>
 
     <!-- Page Content -->
-    <section class="flex-fill bg-light pt-3 d-flex justify-content-center align-items-center">
+    <section class="flex-fill bg-light pt-3">
         <div class="container">
-            <h2>Welcome to Dashboard</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias minima repellendus, quas quia modi nemo dolor excepturi laborum ex vel esse porro nulla fuga blanditiis architecto quidem itaque voluptatem. Voluptatibus!</p>
-            <p>For more information, please click <a href="#">here.</a></p>
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h2 class="display-6 text-center">Header</h2>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6>Heading</h6>
+                        <input type="text" class="form-control" id="header-heading">
+                    </div>
+                    <div class="mb-3">
+                        <h6>Image</h6>
+                        <input type="file" name="" id="" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <h6>Text</h6>
+                        <textarea name="" id="" class="form-control"></textarea>
+                    </div>
+                    <button class="btn btn-primary">Kaydet</button>
+                </div>
+
+            </div>
         </div>
     </section>
 

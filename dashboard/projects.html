@@ -33,12 +33,12 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="dashboard.html">
+                        <a class="nav-link" href="dashboard.html">
                             <i class="bi bi-house-door-fill"></i> Home
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="bi bi-pencil-square"></i> Customize Website
                         </a>
@@ -73,11 +73,51 @@
     </nav>
 
     <!-- Page Content -->
-    <section class="flex-fill bg-light pt-3 d-flex justify-content-center align-items-center">
+    <section class="flex-fill bg-light pt-3">
         <div class="container">
-            <h2>Welcome to Dashboard</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias minima repellendus, quas quia modi nemo dolor excepturi laborum ex vel esse porro nulla fuga blanditiis architecto quidem itaque voluptatem. Voluptatibus!</p>
-            <p>For more information, please click <a href="#">here.</a></p>
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h2 class="display-6 text-center">Projects</h2>
+                </div>
+                <div class="card-body">
+                    <!-- Project Add -->
+                    <div class="d-flex mx-auto mb-3">
+                        <button class="btn btn-primary" id="add-button">
+                            <i class="bi bi-folder-plus"></i> Add new project
+                        </button>
+                    </div>
+                    <!-- Project List -->
+                    <table class="table table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Project Name</th>
+                                <th>Image URL</th>
+                                <th>Text</th>
+                                <th class="text-center">Edit / Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="project-list">
+                            <tr>
+                                <th>0</th>
+                                <td>Proje 1</td>
+                                <td>img/test.jpg</td>
+                                <td>Lorem...</td>
+                                <td class="text-center">
+                                    <button class="btn btn-success btn-sm" id="edit-button" data-bs-toggle="modal"
+                                        data-bs-target="#edit-modal" title="edit">
+                                        <i class="bi bi-pencil-square"></i>
+                                    </button>
+
+                                    <button class="btn btn-danger btn-sm" id="delete-button" title="delete">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </section>
 

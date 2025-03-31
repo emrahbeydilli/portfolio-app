@@ -1,10 +1,5 @@
 
-    /* Styling for login container */
-    .login-container {
-        max-width: 500px;
-    }
-
-    /* Dashboard image */
-    .sidebar{
-        width: 250px;
-    }
+/* Styling for login container */
+.login-container {
+    max-width: 500px;
+}

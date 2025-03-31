@@ -1,6 +1,4 @@
-
-
-export const createAlertModal = (message, modalType) => {
+const createAlertModal = (message, modalType) => {
     const modal = document.createElement('div');
     modal.setAttribute("class", "modal fade");
     modal.setAttribute("tabindex", "-1");
@@ -29,9 +27,6 @@ export const createAlertModal = (message, modalType) => {
             modal.innerHTML = `
                 <div class="modal-dialog modal-dialog-centered" id="basic-"modal>
                 <div class="modal-content">
-                        <div class="modal-header">
-                                <h5 class="modal-title">Hoşgeldiniz!</h5>
-                        </div>
                         <div class="modal-body">
                             <p class="lead text-capitalize">${message}</p>
                             <p class="text-danger" id="countdown-text"></p>
@@ -44,3 +39,14 @@ export const createAlertModal = (message, modalType) => {
 
     return modal;
 };
+
+// load modal
+export const loadModal = (message, modalType) => {
+    const modal = createAlertModal(message, modalType);
+    document.body.appendChild(modal);
+    const modalElement = new bootstrap.Modal(modal);
+    modal.addEventListener('hidden.bs.modal', () => {
+        modal.remove();
+    });
+    modalElement.show();
+}
