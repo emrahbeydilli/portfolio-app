@@ -1,2 +1,2 @@
 # portfolio-app
-Portfolio design with vanilla js &amp; bootstrap 5
+Designing a portfolio website with dashboard using vanilla js & bootstrap 5.
