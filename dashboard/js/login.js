@@ -1,6 +1,6 @@
 import { countdownInterval } from "../../js/helpers/countdown.js";
 import { loadModal } from "../../js/utils/bootstrap/modal.js";
-import { loadUsers } from "./storage.js";
+import { getUsers } from "./storage.js";
 
 const loginForm = document.querySelector("#login-form");
 const usernameInput = document.querySelector("#username-input");
@@ -8,7 +8,7 @@ const passwordInput = document.querySelector("#password-input");
 
 // validate user 
 const validateUser = (username, password) => {
-    const users = loadUsers();
+    const users = getUsers();
     return users.find(user => user.username === username && user.password === password);
 }
 
