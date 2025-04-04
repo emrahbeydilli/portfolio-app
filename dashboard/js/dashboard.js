@@ -15,7 +15,7 @@ const logoutButton = document.querySelector("#logout-button");
 
 // load CurrentUser
 const loadCurrentUser = () => {
-    const imageURL = currentUser.image ? `img/${currentUser.image}` : "img/defaultprofile.jpg";
+    const imageURL = currentUser.image ? currentUser.image : "img/defaultprofile.jpg";
     userImage.src = imageURL;
     userName.textContent = currentUser.username;
 

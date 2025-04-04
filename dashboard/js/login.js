@@ -19,7 +19,7 @@ if (loginForm) {
         const user = validateUser(usernameInput.value, passwordInput.value);
         user ?
             (
-                loadModal(`merhaba ${user.username} hoşgeldin!`),
+                loadModal(`hello ${user.username} welcome!`),
                 countdownInterval(),
                 sessionStorage.setItem("currentUser", JSON.stringify(
                     {

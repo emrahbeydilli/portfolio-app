@@ -7,7 +7,7 @@ export const getCurrentUser = () => {
     return JSON.parse(sessionStorage.getItem("currentUser")) || null;
 }
 
-export const getProjectList = () => {
+export const getProjects= () => {
     return JSON.parse(localStorage.getItem("projects")) || null;
 }
 
