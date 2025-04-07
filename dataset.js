@@ -49,7 +49,7 @@ const users = [
 ];
 
 export const loadDataset = () => {
-    localStorage.setItem("aboutme", aboutme);
-    localStorage.setItem("projects", projects);
-    localStorage.setItem("users", users);
+    localStorage.setItem("aboutme", JSON.stringify(aboutme));
+    localStorage.setItem("projects", JSON.stringify(projects));
+    localStorage.setItem("users", JSON.stringify(users));
 }
