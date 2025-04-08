@@ -6,7 +6,7 @@ export const ContactFormComponent = () => {
     contactFormSection.innerHTML = `
         <div class="container">
             <h2 class="display-4 text-center">Contact</h2>
-            <form id="submit-form">
+            <form id="contact-form">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
