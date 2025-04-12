@@ -1,5 +1,5 @@
 export const STORAGE_KEYS = {
-    ABOUT: "aboutme",
+    ABOUTME: "aboutme",
     PROJECTS: "projects",
     USERS: "users",
     MESSAGES: "messages"

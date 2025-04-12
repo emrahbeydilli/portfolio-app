@@ -1,3 +1,5 @@
+import { STORAGE_KEYS } from "./utils/constant.util";
+
 const aboutme = {
     image: "https://images2.imgbox.com/56/88/oJvFN3l5_o.jpeg",
     text: "Welcome to my personal web page. You can find my own projects on this page. You can use the contact form to contact me about the projects."
@@ -49,7 +51,7 @@ const users = [
 ];
 
 export const loadDataset = () => {
-    localStorage.setItem("aboutme", JSON.stringify(aboutme));
-    localStorage.setItem("projects", JSON.stringify(projects));
-    localStorage.setItem("users", JSON.stringify(users));
+    localStorage.setItem(STORAGE_KEYS.ABOUTME, JSON.stringify(aboutme));
+    localStorage.setItem(STORAGE_KEYS.PROJECTS, JSON.stringify(projects));
+    localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(users));
 }

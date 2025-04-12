@@ -6,20 +6,19 @@ import { getData } from './services/storage.service.js';
 import { handleContactFormSubmit } from './utils/formHandler.util.js';
 import { STORAGE_KEYS } from './utils/constant.util.js';
 // import { loadDataset } from './dataset.js';
+// loadDataset();
 
 document.addEventListener('DOMContentLoaded', () => {
-    // loadDataset();
-    const aboutMeData = getData(STORAGE_KEYS.ABOUT);
-    const projectsData = getData(STORAGE_KEYS.PROJECTS);
-
     const app = document.getElementById('app');
 
-    const aboutMeSection = AboutMeComponent(aboutMeData);
-    const projectsSection = ProjectsComponent(projectsData);
-    const contactFormSection = ContactFormComponent();
+    app.append(
+        AboutMeComponent(getData(STORAGE_KEYS.ABOUTME)),
+        ProjectsComponent(getData(STORAGE_KEYS.PROJECTS)),
+        ContactFormComponent()
+    );
 
-    [aboutMeSection, projectsSection, contactFormSection].forEach(section => app.appendChild(section));
-    
-    const contactForm = document.getElementById("contact-form");
-    contactForm ? handleContactFormSubmit(contactForm) : console.error("Form element not found!");
+    document
+        .getElementById("contact-form")
+        ?.addEventListener("submit", handleContactFormSubmit);
 });
+
