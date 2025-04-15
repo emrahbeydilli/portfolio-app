@@ -1,4 +1,5 @@
-import { getData } from "./services/storage.service.js";
-import { STORAGE_KEYS } from "./utils/constant.util.js";
+import { getCurrentUser } from "./services/auth.service.js";
 
-// getData(STORAGE_KEYS.CURRENTUSER) ?? return;
+if (!getCurrentUser()) {
+    // redirecting the page
+}

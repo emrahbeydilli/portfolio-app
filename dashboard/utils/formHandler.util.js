@@ -1,7 +1,8 @@
 // formHandler.util.js
-import { saveData, validateUser } from "../services/storage.service.js";
+import { saveData } from "../services/storage.service.js";
 import { loadNotificationToast } from "../components/toast.component.js";
 import { STORAGE_KEYS } from "../utils/constant.util.js";
+import { validateUser } from "../services/auth.service.js";
 
 export const handleLoginFormSubmit = (loginForm, key) => {
     loginForm.addEventListener("submit", (e) => {

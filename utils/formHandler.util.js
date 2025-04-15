@@ -6,7 +6,10 @@ import { clearForm } from "./clearForm.util.js";
 export const handleContactFormSubmit = (contactForm) => {
     contactForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        const { name, email, message } = new FormData(contactForm);
+
+        const formData = new FormData(contactForm);
+        const { name, email, message } = Object.fromEntries(formData.entries());
+ 
         saveContactForm({ name, email, message });
         loadNotificationToast("Form sent successfully!", { className: "bg-success text-white", timeout: 3000 });
         clearForm(contactForm);

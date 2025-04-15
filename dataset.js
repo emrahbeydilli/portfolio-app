@@ -1,4 +1,4 @@
-import { STORAGE_KEYS } from "./utils/constant.util";
+import { STORAGE_KEYS } from "./utils/constant.util.js";
 
 const aboutme = {
     image: "https://images2.imgbox.com/56/88/oJvFN3l5_o.jpeg",

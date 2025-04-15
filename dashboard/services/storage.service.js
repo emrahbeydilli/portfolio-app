@@ -26,9 +26,5 @@ export const removeData = (key) => {
     }
 }
 
-export const validateUser = ({username,password},key) => {
-    const users = getData(key);
-    return users.find(user => user.username === username && user.password === password);
-}
 
 // Note that localStorage has a limited storage capacity (typically around 5MB). If you plan to store large amounts of data, you may want to look into alternative storage methods (e.g. IndexedDB).

@@ -5,8 +5,8 @@ import { ContactFormComponent } from './components/contactForm.component.js';
 import { getData } from './services/storage.service.js';
 import { handleContactFormSubmit } from './utils/formHandler.util.js';
 import { STORAGE_KEYS } from './utils/constant.util.js';
-// import { loadDataset } from './dataset.js';
-// loadDataset();
+import { loadDataset } from './dataset.js';
+loadDataset();
 
 document.addEventListener('DOMContentLoaded', () => {
     const app = document.getElementById('app');
@@ -16,9 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ProjectsComponent(getData(STORAGE_KEYS.PROJECTS)),
         ContactFormComponent()
     );
-
-    document
-        .getElementById("contact-form")
-        ?.addEventListener("submit", handleContactFormSubmit);
+    const contactForm = document.getElementById("contact-form");
+    contactForm ? handleContactFormSubmit(contactForm) : console.error("Form is not defined");
 });
 
