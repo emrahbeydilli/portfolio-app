@@ -1,5 +1,4 @@
-import { getCurrentUser } from "./services/auth.service.js";
+import { checkCurrentUser } from "./services/auth.service.js";
+import { STORAGE_KEYS } from "./utils/constant.util.js";
 
-if (!getCurrentUser()) {
-    // redirecting the page
-}
+checkCurrentUser(STORAGE_KEYS.CURRENTUSER);
